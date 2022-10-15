@@ -2,12 +2,14 @@ import CartItem from '../../components/Cards/CartItem';
 import SearchField from '../../components/Fields/SearchField';
 import Logo from '../../components/Logo/HeaderLogo';
 
+import styles from '../../styles/Header.module.css'
+
 const Cabecalho = (props) => {
 
     const renderSimpleHeader = () => {
         return (
-            <div className="Header">
-                <div className="header-wrapper">
+            <div className={styles.Header}>
+                <div className={styles["header-wrapper"]}>
                     <Logo />
                     <SearchField />
                     <CartItem />

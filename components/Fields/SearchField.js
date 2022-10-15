@@ -1,4 +1,6 @@
-import { useState } from "react"
+import { useState } from "react";
+
+import styles from '../../styles/Header.module.css'
 
 const SearchField = () => {
     const [state, setState] = useState({termo: " "})
@@ -8,14 +10,16 @@ const SearchField = () => {
     }
 
     return (
-        <div>
+        <div className={`${styles["flex-3"]} ${styles.flex} ${styles.center}`}>
             <input
                 name="pesquisa"
                 value={state.termo}
-                onChange={e => setState({termo: e.target.value})} 
+                onChange={e => setState({termo: e.target.value})}
+                placeholder="Digite aqui a sua pesquisa..." 
+                className={styles["input-pesquisa"]}
             />
-            <button onClick={submit} className="button-pesquisa">
-                pesquisar
+            <button onClick={submit} className={styles["button-pesquisa"]}>
+            <i className="fa fa-search"></i>
             </button>
         </div>
     )

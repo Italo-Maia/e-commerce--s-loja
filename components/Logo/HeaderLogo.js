@@ -1,11 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 
+import styles from '../../styles/Header.module.css'
+
 const HeaderLogo = () => (
-    <div className="flex-2 flex flex-center">
+    <div className={`${styles["flex-2"]} ${styles.flex} ${styles.center}`}>
         <Link href="/">
-            <img src="/logo.png" className="logo" width="20%" />
-        </Link>k
+            <img src="/logo.png" className={styles.logo} width="90%" />
+        </Link>
     </div>
 )
 

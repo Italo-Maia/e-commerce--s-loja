@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css';
+
 import Layout from '../components/Layout';
 
 import Cabecalho from '../containers/Cabecalho';
@@ -9,9 +9,8 @@ import Cabecalho from '../containers/Cabecalho';
 
 const Home = () => {
   return (
-    <div className={styles.container}>
+    <div >
       <Layout title="Loja King">
-        <h2>Loja King</h2>
         <Cabecalho simple/>
         {/* <Banners />
         <Beneficios />
