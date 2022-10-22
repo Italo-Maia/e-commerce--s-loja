@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import styles from '../../styles/Header.module.css'
+import styles from '../../styles/Main.module.css'
 
 const HeaderLogo = () => (
     <div className={`${styles["flex-2"]} ${styles.flex} ${styles.center}`}>

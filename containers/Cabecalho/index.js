@@ -1,8 +1,9 @@
 import CartItem from '../../components/Cards/CartItem';
 import SearchField from '../../components/Fields/SearchField';
 import Logo from '../../components/Logo/HeaderLogo';
+import Categories from '../../components/Lists/Categories'
 
-import styles from '../../styles/Header.module.css'
+import styles from '../../styles/Main.module.css'
 
 const Cabecalho = (props) => {
 
@@ -15,6 +16,9 @@ const Cabecalho = (props) => {
                     <CartItem />
                     {/* <InputSearch />
                     <CardCart /> */}
+                </div>
+                <div className={`${styles["categories-wrapper"]}`}>
+                        <Categories />
                 </div>
             </div>
         )

@@ -20,7 +20,7 @@ const Layout = ({ children, title, description, url, image}) => {
             <footer>
                 <div className='flex flex-center'>
                     <small>
-                        &copy; Loja Ring Eletronicos
+                        {/* &copy; Loja Ring Eletronicos */}
                     </small>
 
                 </div>

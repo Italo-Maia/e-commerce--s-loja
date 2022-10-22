@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import styles from '../../styles/Header.module.css'
+import styles from '../../styles/Main.module.css'
 
 const SearchField = () => {
     const [state, setState] = useState({termo: " "})
